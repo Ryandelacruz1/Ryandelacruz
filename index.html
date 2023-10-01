@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Compilation - Hubert I. Caguiat</title>
+    <link rel="stylesheet" href="StyleIndex.css">
+</head>
+<body>
+    <!-- Loading screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loader"></div>
+    </div>
+
+    <div class="background-image"></div> <!-- Add a div for the background image -->
+    <div class="content">
+        <h2>A Compilation of JavaScript Programs in Webtech2</h2>
+        <div class="container">
+            <h3>Select a Program</h3>
+            <a href="addition.html" class="btn-home" onclick="showLoadingScreen()">Addition of Two Numbers</a><br/><br/>
+            <a href="compare.html" class="btn-home" onclick="showLoadingScreen()">Comparing Two Numbers</a><br/><br/>
+            <a href="average.html" class="btn-home" onclick="showLoadingScreen()">Average Quiz</a><br/><br/>
+            <a href="fiveinputs.html" class="btn-home" onclick="showLoadingScreen()">Five Inputs</a><br/><br/>
+        </div>
+        <p>Submitted by: Delacruz Vanryan M,</p>
+    </div>
+
+    <script>
+        // JavaScript function to show the loading screen
+        function showLoadingScreen() {
+            const loadingScreen = document.getElementById('loadingScreen');
+            loadingScreen.style.display = 'flex'; // Show the loading screen
+        }
+
+        // JavaScript function to hide the loading screen when the page is fully loaded
+        window.addEventListener('load', () => {
+            const loadingScreen = document.getElementById('loadingScreen');
+            loadingScreen.style.display = 'none'; // Hide the loading screen
+        });
+    </script>
+</body>
+</html>

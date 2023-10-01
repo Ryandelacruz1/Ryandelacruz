@@ -1,0 +1,79 @@
+        /* Add a CSS class for the background image */
+        body {
+            background-image: url('2Backimage.jpg');
+            background-size: cover; /* Adjust this as needed */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            text-align: center;
+            color: #007BFF;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: colorTyping 2s infinite alternate;
+        }
+        
+        @keyframes colorTyping {
+            0% {
+                color: #007BFF;
+            }
+            100% {
+                color: #FF0000; /* Change to your desired end color */
+            }
+        }
+        .container {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        #result {
+            font-size: 24px;
+        }
+
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
